@@ -1,0 +1,118 @@
+/* @import '../styles/font.css'; */
+
+/*  Hero Section  */
+
+.home-wrapper {
+  background: #c1cde7;
+}
+
+.home-wrapper .hero {
+  width: 100%;
+  height: 770px;
+  position: relative;
+  background: url('./assets/hero.jpg') no-repeat bottom right;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+}
+
+.home-wrapper .hero .caption {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: -50px;
+  margin-top: -150px;
+  z-index: 10;
+}
+
+.home-wrapper .hero .caption h2 {
+  color: #fff;
+  font-family: "p22_corinthia", Helvetica, Arial, sans-serif;
+  font-size: 100px;
+  font-weight: lighter;
+  margin: 0;
+  position: relative;
+  display: block;
+}
+
+.home-wrapper .hero .caption a {
+  display: block;
+  color: #fff;
+  font-family: "lato-regular", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  position: relative;
+  left: 35%;
+  margin: 65px 0 0;
+  width: 200px;
+  height: 45px;
+  line-height: 45px;
+  border: 2px solid #ffffff;
+  background: #c79e22;
+
+  transition: background .1s linear;
+  -webkit-transition: background .1s linear;
+  -moz-transition: background .1s linear;
+  -o-transition: background .1s linear;
+}
+
+/*  header Section  */
+
+.home-wrapper header{
+  width: 100%;
+  height: 100px;
+  background: rgba(28, 54, 85, .2);
+}
+
+.home-wrapper header .logo{
+  margin-top: 28px;
+  float: left;
+  width: 182px;
+}
+
+.home-wrapper header nav{
+  float: right;
+  opacity: 1;
+}
+
+
+.home-wrapper header nav ul{
+  margin-top: 40px;
+  list-style: none;
+  overflow: hidden;
+  float: left;
+}
+
+.home-wrapper header nav ul li{
+  float: left;
+  margin-left: 50px;
+}
+
+.home-wrapper header nav ul li a,
+.home-wrapper header nav .login_btn{
+  text-decoration: none;
+  color: #fff;
+  font-family: "lato-regular", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+
+}
+
+.home-wrapper header nav .login_btn{
+  float: right;
+  margin: 30px 0 0 50px;
+  padding: 10px 30px 11px 30px;
+  border: 2px solid #ffffff;
+  background: transparent;
+
+  transition: background .1s linear;
+  -webkit-transition: background .1s linear;
+  -moz-transition: background .1s linear;
+  -o-transition: background .1s linear;
+}
+
+.home-wrapper header nav .login_btn:hover{
+  background: #ffffff;
+  color: #1c3655;
+}
