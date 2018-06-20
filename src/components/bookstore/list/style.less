@@ -1,13 +1,27 @@
 .list-home-wrapper {
   position: relative;
+  height: 100%;
+  
+  /* 底部的背景图 */
   .bg-wrap {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    position: relative;
+    z-index: -1;
     background: url('./assets/bg1.jpg') no-repeat bottom center;
     background-size: cover;
+  }
+
+  /* 背景图上的内容展示 */
+  .top-content-wrapper {
+    height: 100%;
+    header {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.52);
+    }
+    .search-wrap {
+      padding: 81px 0 50px;
+    }
   }
 }
