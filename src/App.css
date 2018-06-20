@@ -1,2 +1,3 @@
-@import './components/styles/font.css';
-@import './components/styles/layout.css';
+@import './components/styles/font.less';
+@import './components/styles/layout.less';
+@import './components/styles/common.less';
