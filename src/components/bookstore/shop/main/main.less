@@ -1,0 +1,140 @@
+
+.main-content {
+  .tc-padding {
+    padding-top: 60px!important;
+  }
+  .aside-widget {
+
+    .search-bar {
+      width: 100%;
+      position: relative;
+      margin: 0;
+      float: right;
+
+      input {
+        height: 43px;
+        line-height: 43px;
+        border: 1px solid #e6e6e6;
+        text-transform: uppercase;
+        color: #333;
+      }
+
+      .sub-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        height: 43px;
+        line-height: 43px;
+        padding: 0 15px;
+        border-radius: 0;
+        background: none;
+        color: #575655;
+      }
+    }
+
+    .advanced-search {
+      float: right;
+      width: 100%;
+      overflow: hidden;
+      padding: 5px 0;
+
+      a {
+        float: right;
+        text-align: right;
+        font-size: 13px;
+      }
+    }
+
+    .category-list {
+      li {
+        &:first-child {
+          a {
+            padding-top: 0;
+          }
+        }
+
+        a {
+          padding: 10px 0;
+          border-bottom: 1px solid #f5f5f5;
+          font-size: 14px;
+
+          &::before {
+            content: '\f105';
+            font-family: fontawesome;
+            margin: 0 10px 0 0;
+            color: #ccc;
+          }
+
+          &:hover {
+            margin: 0 0 0 20px;
+            color: #ff851d;
+          }
+        }
+      }
+    }
+
+    .books-year-list {
+      li {
+        margin: 0 0 30px;
+
+        .books-post-widget {
+          position: relative;
+          padding: 0 0 0 70px;
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+
+          h6 {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: bold;
+            margin: 0 0 5px;
+          }
+
+          .rating-stars {
+            li {
+              margin: 0;
+            }
+          }
+          .offer-price {
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+
+  .product-sort {
+    overflow: hidden;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #eee;
+    margin: 0 0 30px;
+
+    label {
+      float: left;
+      line-height: 32px;
+      margin: 0 20px 0 0;
+    }
+
+    select {
+      height: 32px;
+      border: 1px solid #eee;
+      padding: 0 10px;
+      color: #999;
+    }
+  }
+
+  .product-box {
+    margin: 0 0 50px;
+
+    .rating-and-price {
+      border-top: 1px solid #e7e7e7;
+      padding: 20px 0 0;
+      border-bottom: 0;
+    }
+  }
+}

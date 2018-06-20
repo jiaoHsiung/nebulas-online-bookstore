@@ -13,8 +13,8 @@ class NavBar extends Component {
           <nav>
             <ul>
               <li><Link to="/book-list">BookStore</Link></li>
-              <li><a>About</a></li>
-              <li><a>Contact</a></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
             <a className="login_btn">Login</a>
           </nav>

@@ -129,6 +129,19 @@ module.exports = {
         include: paths.appSrc,
       },
       {
+        test: require.resolve('jquery'),
+        use: [
+          {
+           loader: 'expose-loader',
+           options: 'jQuery'
+          },
+          {
+           loader: 'expose-loader',
+           options: '$'
+          }
+        ]
+      },
+      {
         // "oneOf" will traverse all following loaders until one will
         // match the requirements. When no loader matches it will fall
         // back to the "file" loader at the end of the loader list.
@@ -332,6 +345,11 @@ module.exports = {
     // https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
     // You can remove this if you don't use Moment.js:
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+    new webpack.ProvidePlugin({ 
+     $: 'jquery', 
+     jQuery: 'jquery', 
+     "window.jQuery": 'jquery' 
+   }) 
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.

@@ -7,8 +7,18 @@ export default [
 		component: AsyncComponent(() => import('./home'))
 	},
 	{
-		name: 'shu',
+		name: '书店',
 		path: '/book-list',
 		component: AsyncComponent(() => import('./bookstore/list'))
+	},
+	{
+		name: '关于',
+		path: '/about',
+		component: AsyncComponent(() => import('./bookstore/template'))
+	},
+	{
+		name: '联系',
+		path: '/contact',
+		component: AsyncComponent(() => import('./bookstore/shop'))
 	}
 ]
