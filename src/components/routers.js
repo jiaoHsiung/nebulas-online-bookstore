@@ -14,7 +14,7 @@ export default [
 	{
 		name: '关于',
 		path: '/about',
-		component: AsyncComponent(() => import('./bookstore/template'))
+		component: AsyncComponent(() => import('./bookstore/about'))
 	},
 	{
 		name: '联系',

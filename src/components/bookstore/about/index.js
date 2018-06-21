@@ -2,21 +2,21 @@ import React, { Component } from 'react';
 import Header from '../../common/header';
 import InnerBanner from '../../common/inner-banner';
 import CurrentPath from '../../common/current-path';
-import BookList from './list';
+import AboutShop from './about-shop';
 
 import './style.less';
 
-class BookListHome extends Component {
+class About extends Component {
   render() {
     return (
-      <div className="book-list-wrapper">
+      <div className="about-wrapper">
         <Header />
-        <InnerBanner imgName="ib01" />
-        <CurrentPath routerName="home" />
-        <BookList />
+        <InnerBanner imgName="ib02" />
+        <CurrentPath routerName="about" />
+        <AboutShop />
       </div>
     );
   }
 }
 
-export default BookListHome;
+export default About;

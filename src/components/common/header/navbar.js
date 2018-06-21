@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
-import { Icon } from 'antd';
+import { Link } from 'react-router-dom';
+import { Icon, Input, Button } from 'antd';
 
 class NavBar extends Component {
+  state = {
+    showSearchModal: false
+  };
+
+  toggleSearchModal = () => {
+    this.setState({ showSearchModal: !this.state.showSearchModal }, () => {
+      document.querySelector('body').style = this.state.showSearchModal ? document.querySelector('body').style = "overflow: hidden" : "overflow: auto";
+    });
+  }
+
   render() {
+    const currentHash = window.location.hash.replace('#/', '');
     return (
       <section className="navbar-wrapper">
         <div className="wrapper">
@@ -12,40 +24,60 @@ class NavBar extends Component {
               <span>Read Lover</span>
             </div>
             <div className="search-bar">
-              <a>
+              <a onClick={this.toggleSearchModal}>
                 <Icon type="search" />
               </a>
             </div>
             <div className="navigation-wrap">
               <ul>
-                <li className="active">
-                  <a>
+                <li className={currentHash === '' ? 'active' : ''}>
+                  <Link to="/">
                     <Icon type="home" />
                     home
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a>
+                <li className={currentHash === 'book-list' ? 'active' : ''}>
+                  <Link to="/book-list">
                     <Icon type="shop" />
                     shop
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a>
+                <li className={currentHash === 'about' ? 'active' : ''}>
+                  <Link to="/about">
                     <Icon type="profile" />
                     about
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a>
+                <li className={currentHash === 'contact' ? 'active' : ''}>
+                  <Link to="/contact">
                     <Icon type="contacts" />
                     contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+        {
+          this.state.showSearchModal && (
+            <div className="search-cotainer">
+              <div className="close-btn" onClick={this.toggleSearchModal}>
+                <Icon type="close" />
+              </div>
+              <div className="search-holder">
+                <h1>
+                  Have a try. 
+                  <br />
+                  <p>Search the book you want to read</p>
+                </h1>
+                <div className="search-bar">
+                  <Input addonBefore={<Icon type="search" />} />
+                  <Button>Find a Book</Button>
+                </div>
+              </div>
+            </div>
+          )
+        }
       </section>
     );
   }

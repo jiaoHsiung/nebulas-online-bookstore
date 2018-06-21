@@ -17,6 +17,10 @@ html, body, #root, .wrapper {
   }
 }
 
+a:link, a:visited, a:hover, a:active, {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
@@ -46,4 +50,22 @@ h5, h6 { font-weight: bolder }
 
 .clearfix {  
   *zoom: 1;  
+}
+
+*:after,
+*:before,
+a,
+p,
+h1,h2,h3,h4,h5,h6,
+button,
+.footer-links li,
+.product-cart-option,
+.product-cart-option li,
+.product-cart-option li a:hover,
+.s-product-hover,
+.navigation ul li ul,
+.book-category-wrap li a,
+.book-category-wrap li a:hover
+{
+  transition: all 0.5s ease-in-out;
 }

@@ -5,7 +5,7 @@ import './style.less';
 
 export default class InnerBanner extends React.Component {
   componentDidMount() {
-    $('.parallax-window').parallax({imageSrc: require('../assets/img-10.jpg')});
+    $('.parallax-window').parallax({imageSrc: require(`../assets/${this.props.imgName}.jpg`)});
   }
 
   render() {
