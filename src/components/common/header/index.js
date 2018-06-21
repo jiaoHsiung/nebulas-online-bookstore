@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-
-import TopBar from '../topbar';
-// import Navigation from '../navigation';
-
-export default class Header extends Component {
+import TopBar from './topbar';
+import NavBar from './navbar';
+import './style.less';
+class Header extends Component {
   render() {
     return (
-      <header id="header">
+      <div className="header-wrapper">
         <TopBar />
-        {/* <Navigation {...this.props} /> */}
-      </header>
+        <NavBar />
+      </div>
     );
   }
 }
+
+export default Header;

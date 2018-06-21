@@ -1,23 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../common/header';
-import Footer from '../../common/footer';
 import InnerBanner from './inner-banner';
-import Main from './main';
+import BookList from './list';
 
-class Shop extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+import './style.less';
+
+class BookListHome extends Component {
   render() {
     return (
-      <div className="wrapper">
+      <div className="book-list-wrapper">
         <Header />
         <InnerBanner />
-        <Main />
-        <Footer />
+        <div className="current-path">
+          <div className="wrapper">
+            <ul>
+              <li>
+                <Link to="/">home</Link>
+              </li>
+              <li>shop</li>
+            </ul>
+          </div>
+        </div>
+        <BookList />
       </div>
     );
   }
 }
 
-export default Shop;
+export default BookListHome;
