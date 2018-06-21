@@ -1,0 +1,42 @@
+[
+  {
+    "key": 1,
+    "bookClassTitle": "小说"
+  },
+  {
+    "key": 2,
+    "bookClassTitle": "童书"
+  },
+  {
+    "key": 3,
+    "bookClassTitle": "教育"
+  },
+  {
+    "key": 4,
+    "bookClassTitle": "人文社科"
+  },
+  {
+    "key": 5,
+    "bookClassTitle": "经管"
+  },
+  {
+    "key": 6,
+    "bookClassTitle": "成功/励志"
+  },
+  {
+    "key": 7,
+    "bookClassTitle": "生活"
+  },
+  {
+    "key": 8,
+    "bookClassTitle": "科技"
+  },
+  {
+    "key": 9,
+    "bookClassTitle": "文艺"
+  },
+  {
+    "key": 10,
+    "bookClassTitle": "青春文学"
+  }
+]
