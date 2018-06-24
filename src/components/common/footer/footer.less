@@ -1,0 +1,142 @@
+.footer {
+  background: #06080f;
+  width:100%;
+  float: left;
+  padding:60px 0 0;
+  margin-top: 50px;
+
+  .footer-columns {
+    display: flex;
+
+    .footer-column {
+      padding: 35px 28px 0 0;
+      &:first-child {
+        padding-top: 0;
+      }
+      flex: 1;
+
+      a {
+        color: #fff;
+        align-items: center;
+        span {
+          color: #fff;
+          font-size: 28px;
+          margin-left: 15px;
+        }
+      }
+
+      h4 {
+        margin: 0 0 40px;
+        font-size: 16px;
+        color: #ff851d;
+      }
+    }
+
+    .logo-column {
+      flex: 2;
+      padding-right: 35px;
+      p {
+        color: #b5b5b5;
+      }
+
+      a {
+        margin:0 0 25px;
+        display: flex;
+      }
+    }
+
+    .address-list {
+      li {
+        margin: 0 0 15px;
+        color: #b5b5b5;
+
+        a {
+          display: inline-block;
+          height: 30px;
+          width:30px;
+          padding: 8px 0;
+          text-align: center;
+          border-radius: 50%;
+          background: #0c0f17;
+          margin:0 10px 0 0;
+          font-size: 0;
+          .anticon {
+            color: #ff851d;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .footer-links {
+      li {
+        position: relative;
+        margin: 0 0 20px;
+        padding: 0 0 0 15px;
+
+        .anticon {
+          position: absolute;
+          left: 0;
+          top: 4px;
+          color: #b5b5b5;
+          transform: scale(0.8);
+        }
+
+        &:hover {
+          padding: 0 0 0 30px;
+
+          a {
+            color: #ff851d;
+          }
+        }
+
+        a {
+          color: #b5b5b5;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .newsletter {
+      flex: 2;
+      p {
+        color: #b5b5b5;
+        margin: 0 0 20px;
+      }
+
+      .newsletter-input {
+        margin:0 0 30px;
+      }
+    }
+  }
+
+  .sub-footer {
+    background: #0a0f19;
+    padding:10px 0;
+    .wrapper {
+      overflow: hidden;
+    }
+    p {
+      color: #b5b5b5;
+      font-size: 12px;
+      margin: 0;
+      float: left;
+    }
+
+    .back-top {
+      color: #b5b5b5;
+      font-size: 12px;
+      float: right;
+
+      &:hover {
+        color: #ff851d;
+      }
+
+      .anticon {
+        color: #ff851d;
+        transform: scale(0.8);
+        margin-left: 8px;
+      }
+    }
+  }
+}

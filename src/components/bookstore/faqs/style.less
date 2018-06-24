@@ -1,0 +1,106 @@
+
+.questions-wrapper {
+  .questions-container {
+    .main-heading-wrap {
+      text-align: center;
+      .main-heading {
+        display: inline-block;
+      }
+      h2 {
+        position: relative;
+        padding: 0 20px;
+        &::before {
+          right: 100%;
+          background: url('../about/assets/heading-left-line.png') no-repeat;
+        }
+        &::after {
+          left: 100%;
+          background: url(../about/assets/heading-right-line.png) no-repeat;
+        }
+        &::before, &::after {
+          content: "";
+          position: absolute;
+          width: 58px;
+          height: 6px;
+          top: 50%;
+          margin: -2px 0 0;
+        }
+      }
+    }
+    
+    .questions-items-wrap{
+      margin: 34px auto 0;
+      overflow: hidden;
+      padding: 15px;
+      .item-wrap {
+        width: 22%;
+        float: left;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 0 15px 45px;
+        .pin-holder {
+          position: absolute;
+          left: 50%;
+          top: -12px;
+          .anticon {
+            color: #1e293d;
+            font-size: 20px;
+            margin-left: -20px;
+          }
+        }
+        .item-container {
+          text-align: left;
+          height: 100%;
+          .item {
+            padding: 20px;
+            height: 244px;
+            &.color1 {
+              background: #ffba49;
+            }
+            &.color2 {
+              background: #cd99a3;
+            }
+            &.color3 {
+              background: #ffb997;
+            }
+            &.color4 {
+              background: #a8cfea;
+            }
+            &.color5 {
+              background: #bf0603;
+            }
+            &.color6 {
+              background: #aa6422;
+            }
+          }
+          .question-item {
+            color: #1e293d;
+            margin-bottom: 15px;
+          }
+          .answer-item {
+            color: #fff;
+          }
+          .question-item, .answer-item {
+            display: flex;
+            span {
+              font-size: 14px;
+              &:first-child {
+                margin-right: 8px;
+              }
+              &:last-child {
+                flex: 1;
+              }
+              .anticon {
+                margin-right: 10px;
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}

@@ -32,14 +32,14 @@ class NavBar extends Component {
               <ul>
                 <li className={currentHash === '' ? 'active' : ''}>
                   <Link to="/">
-                    <Icon type="home" />
+                    <Icon type="shop" />
                     home
                   </Link>
                 </li>
-                <li className={currentHash === 'book-list' ? 'active' : ''}>
-                  <Link to="/book-list">
-                    <Icon type="shop" />
-                    shop
+                <li className={currentHash === 'person' ? 'active' : ''}>
+                  <Link to="/person">
+                    <Icon type="home" />
+                    info
                   </Link>
                 </li>
                 <li className={currentHash === 'about' ? 'active' : ''}>
@@ -52,6 +52,12 @@ class NavBar extends Component {
                   <Link to="/contact">
                     <Icon type="contacts" />
                     contact
+                  </Link>
+                </li>
+                <li className={currentHash === 'faqs' ? 'active' : ''}>
+                  <Link to="/faqs">
+                    <Icon type="question-circle-o" />
+                    faqs
                   </Link>
                 </li>
               </ul>

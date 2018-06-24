@@ -9,9 +9,9 @@ export default function CurrentPath({routerName}) {
       <div className="wrapper">
         <ul>
           <li>
-            <Link to="/">{routerName}</Link>
+            <Link to="/">home</Link>
           </li>
-          <li>shop</li>
+          <li>{routerName}</li>
         </ul>
       </div>
     </div>

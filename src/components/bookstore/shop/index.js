@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Header from '../../common/header';
 import InnerBanner from '../../common/inner-banner';
 import CurrentPath from '../../common/current-path';
 import BookList from './list';
@@ -10,9 +9,8 @@ class BookListHome extends Component {
   render() {
     return (
       <div className="book-list-wrapper">
-        <Header />
         <InnerBanner imgName="ib01" />
-        <CurrentPath routerName="home" />
+        <CurrentPath routerName="shop" />
         <BookList />
       </div>
     );

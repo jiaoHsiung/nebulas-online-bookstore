@@ -1,0 +1,42 @@
+
+.sidebarmenu {
+  width: 190px;
+  flex: 0 0 190px;
+
+  .ant-menu {
+     flex: auto;
+     padding: 16px 0;
+     border-right: none;
+     background: #1e293d;
+     color: #fff;
+     box-shadow: 2px 0 3px 0 rgba(0, 0, 0, .15);
+  
+     .ant-menu-sub {
+        background: #273248;
+     }
+  }
+
+  .ant-menu-inline {
+    .ant-menu-item {
+      border-right: 0;
+      padding-right: 0;
+      color: #fff;
+
+      > a {
+        color: #fff;
+      }
+
+      &:hover, &:active {
+        background-color: #48505f;
+        color: #fff;
+      }
+    }
+    .ant-menu-item-selected {
+      color: #fff!important;
+      background-color: #48505f!important;
+    }
+  }
+  .ant-menu-item, .ant-menu-submenu, .ant-menu-submenu-title {
+    transition: none;
+  }
+}

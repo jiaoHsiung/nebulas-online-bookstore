@@ -1,0 +1,22 @@
+[
+  {
+    "key": "酷男",
+    "imgPrefix": "./assets/man/",
+    "items": ["pic_head_1_s.png", "pic_head_2_s.png", "pic_head_3_s.png", "pic_head_4_s.png", "pic_head_5_s.png", "pic_head_6_s.png", "pic_head_7_s.png", "pic_head_8_s.png", "pic_head_9_s.png", "pic_head_10_s.png"]
+  },
+  {
+     "key": "靓女",
+    "imgPrefix": "./assets/woman/",
+    "items": ["pic_head_11_s.png", "pic_head_12_s.png", "pic_head_13_s.png", "pic_head_14_s.png", "pic_head_15_s.png", "pic_head_16_s.png", "pic_head_17_s.png", "pic_head_18_s.png", "pic_head_19_s.png", "pic_head_20_s.png"]
+  },
+  {
+     "key": "可爱动物",
+    "imgPrefix": "./assets/animal/",
+    "items": ["pic_head_21_s.png", "pic_head_22_s.png", "pic_head_23_s.png", "pic_head_24_s.png", "pic_head_25_s.png", "pic_head_26_s.png", "pic_head_27_s.png", "pic_head_28_s.png", "pic_head_29_s.png", "pic_head_30_s.png"]
+  },
+  {
+     "key": "个性",
+    "imgPrefix": "./assets/personanity/",
+    "items": ["pic_head_31_s.png", "pic_head_32_s.png", "pic_head_33_s.png", "pic_head_34_s.png", "pic_head_35_s.png", "pic_head_36_s.png", "pic_head_37_s.png", "pic_head_38_s.png", "pic_head_39_s.png", "pic_head_40_s.png"]
+  }
+]

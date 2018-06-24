@@ -15,7 +15,6 @@ class Home extends Component {
             <a>Go Hunting&nbsp;&nbsp;<Icon type="arrow-right" /></a>
           </section>
         </section>
-
       </div>
     );
   }
